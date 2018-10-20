@@ -6,9 +6,9 @@ pipeline {
         echo 'Gradle Demo'
       }
     }
-    stage('source') {
+    stage('Timestamp') {
       steps {
-        build 'gradle build'
+        timestamps()
       }
     }
   }
